@@ -27,10 +27,10 @@ public class DeviceListFragment extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        for (int i=0;i<30;i++){
-            devices.add("symh"+i);
+        for (int i=0;i<10;i++){
+            devices.add("UTC_"+i);
         }
-        ArrayAdapter<String>  adapter=new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,devices);
+        DeviceAdapter adapter=new DeviceAdapter(getActivity(), R.layout.row_devices,devices);
         this.setListAdapter(adapter);
     }
 
