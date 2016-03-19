@@ -3,6 +3,9 @@
     <string name="search_name">搜索</string>
     <string name="search_device">搜索设备</string>
     <string name="connected_device">已连接UTC列表</string>
-    <string name="utc_1">UTC_1</string>
+    <string name="utc_10">UTC_10</string>
     <string name="unconnected_device">可用UTC列表</string>
+    <string name="search">search</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
 </resources>
