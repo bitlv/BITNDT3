@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/search_device"
+            android:background="@color/warmGrey"/>
+
+        <LinearLayout
+            android:id="@+id/search_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/search_name"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:name="com.bit.lv.bitndt3.DeviceListFragment"
+        android:id="@+id/frag_devicelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
